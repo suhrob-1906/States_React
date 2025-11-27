@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  padding: 20px;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+
+.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 8px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.dark .card {
+  background: #333333;
+}
+
+button {
+  padding: 8px 12px;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+input {
+  padding: 8px;
+  width: 100%;
+  font-size: 16px;
+}
