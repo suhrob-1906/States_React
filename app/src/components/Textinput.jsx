@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Textinput = () => {
+export default function Textinput({ username, setUsername }){
   return (
-    <div>Textinput</div>
+    <div className='card'>
+      <h2>enter ur name</h2>
+      <input
+      value={username}
+      onChange={(e) => setUsername(e.target.value)}
+      placeholder='type hare...'/>
+    </div>
   )
 }
-
-export default Textinput

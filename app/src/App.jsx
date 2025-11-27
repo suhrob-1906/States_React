@@ -9,7 +9,9 @@ function App() {
     <div className={`app ${theme}`}>
       <h1>React State</h1>
       <ThemeLogger theme={theme} setTheme={setTheme}/>
+
       <Counter/>
+      
       <Textinput username={username} setUsername={setUsername}/>
       <p>Current username:{username}</p>
       </div>

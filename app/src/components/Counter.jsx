@@ -1,9 +1,17 @@
 import React from 'react'
+import { useState } from 'react'
 
-const Counter = () => {
-  return (
-    <div>Counter</div>
+export default function Counter() {
+  const [count, setCount] = useState(0);
+
+  return(
+    <div className='card'>
+      <h2>Counter</h2>
+      <p>Counter: {count} </p>
+
+      <button onClick={() => setCount(count +1)}>+</button>
+      <button onClick={() => setCount(count -1)}>-</button>
+
+    </div>
   )
 }
-
-export default Counter
